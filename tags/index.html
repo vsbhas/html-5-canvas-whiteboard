@@ -1,0 +1,1485 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html class="pageview">
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<base target="_top">
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  
+  * html body {
+    height: 1100px;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  
+
+  
+    
+    
+    .writely-callout-data {
+      display: inline-block;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      margin-left: -1px;
+    }
+    
+
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>T-111.2350 Loppuraportti</title>
+
+</head>
+
+<body 
+    
+    >
+    
+    
+    
+<h1>
+  &nbsp;Esiselvitys
+</h1>
+<h2>
+  <font size=4>HTML5</font>
+</h2>
+HTML siirtoformaatin tämän hetkinen standardi HTML 4.01 julkaistiin jo vuonna 1999 [1] eikä se 10 vuoden jälkeen enää täytä nykyaikaisten www-sivujen tarpeita. Tällaisia tarpeita ovat esimerkiksi animaation, videon tai audion esittäminen www-sivulla, mihin nykyinen HTML 4.01 ei kykene. Uusi HTML 5 -versio parantaa varsinkin eri median esittämistä parantamalla tuen laajasti käytössä olevaan sisältöön [2].<br>
+<br>
+<div>
+  HTML 5:n mukanaan tuomat ominaisuudet tulevat luultavasti vähentämään Flash:in suosiota Internet-sivustoilla. Ominaisuuksiensa puolesta tämä olisi mahdollista HTML 5:n puolesta, mutta vakiintuneet käytännöt ja tekniikat ovat usein vaikeasti syrjäytettävissä. Ryhmämme haluaa kuitenkin olla tekniikan edelläkävijä ja näyttää oikean polun HTML-sivustojen kehitykseen. HTML 5 paitsi poistaa turhat lisäosat selaimista, tekee myös sivustoista hyvin paljon kevyempiä esittää millä tahansa selaimella verrattuna tämän hetkisiin korvaaviin tekniikoihin. Toinen tämänhetkinen korvaava tekniikka on nimeltään Microsoft Silverlight, joka vaatii myös Flash:in tapaan lisäosan selaimelta.<br>
+</div>
+<br>
+<div>
+  Uusimmat selaimet tukevat jo osittain HTML 5:n ominaisuuksia, joten mielestämme tekniikan on jo aika kehittyä eteenpäin ja HTML 5 -ominaisuudet tulee jo ottaa laajempaan käyttöön. Muun muassa suosittu YouTube-videopalvelu tarjoaa käyttäjilleen nykyään HTML5-videosoittimen kokeiluversion Flash-soittimen sijaan [3]. Trendi siis tuntuu olevan vahvasti tähän tekniikkaan päin, kunhan HTML 5 -tuki yleistyy täydellisenä kaikkiin selaimiin ja tekniikka kehittyy sille asteelle, että se voidaan ottaa laajempaan käyttöön. Aikaa tähän silti vielä on, sillä lopullinen virstanpylväs HTML 5:n standardoinnissa on näillä näkymin vuosi 2022, jolloin ensimmäinen ehdotus lopullisesta standarista pyritään saamaan valmiiksi [4].<br>
+  <h2>
+    HTML 5 Canvas-elementti
+  </h2>
+  <p>
+    Tässä harjoitustyössä paneudumme yhteen HTML 5:n tuomiin parannuksiin, Canvas-elementtiin. Canvas-elementti ja siihen liittyvät API:t tuovat mahdollisuuden muokata ja käsitellä grafiikkaa tehokkaasti. Canvas-elementtiä ei kuitenkaan sousitella käytettävän jos asian voi esittää jollakin toisella elementillä tai elementeillä [5]. Tästä suosituksesta tulisi myös ryhmämme mielestä pitää kiinni, sillä nykyään Internet on pullollaan täysin Flash-pohjaisia sivustoja, vaikka Flash-tekniikkaa ei ole alun perin tarkoitettu sivuston ulkoasun luomiseen.
+  </p>
+  <p>
+    <br>
+  </p>
+  <p>
+    Canvas-elementin perimmäinen käyttötarkoitus on siis kansankielellä ilmaistuna tuottaa muuttuvaa grafiikkaa sekä animaatiota verkkosivuille. Grafiikan luonti puhtaasti HTML-merkkikielen avulla voi olla usein tuskaista ja hyvin vaikeaa, mikäli useiden selainten tuki tulee taata. Canvas-elementti tuo standardin tavan luoda grafiikkaa puhtaasti HTML-merkkikielen avulla. Perinteisesti vaikeamman grafiikan luonti HTML-merkkikielellä on vaatinut ulkoisia kuvatiedostoja ja vaativaa HTML- ja CSS-käsittelyä<font size=2>, mikäli SVG-kuvatiedostoja ei huomioida</font>. SVG-formaatin avulla on mahdollista kuvata vektorigrafiikkaa merkkikielellä, mutta se ei suoranaisesti elä yhdessä HTML-standardin kanssa. Canvas siis integroi grafiikan tuoton suoraan HTML:ään.
+  </p>
+  <h3>
+    HTML 5 Canvas-elementin toiminta
+  </h3>
+  HTML 5 Canvas elementti tuo mukanaan mahdollisuuden luoda dynaamisesti bitmapin ja muokata sitä ECMAScriptillä. Canvas elementti itsessään on osa DOM:ia joka tarkoittaa, että sopivalla CSS määrityksellä voidaan integroida Canvas elementti osaksi www-sivua ja asetella sitä muiden elementtien tapaan.<br>
+  <br>
+  Canvasille piirto tapahtuu rajapinnan kautta jotka kutsutaan canvasin kontekstiksi (Context). Näitä konteksteja ei määritellä HTML 5 spesifikaatiossa vaan muualla eri kontekstien omissa spesifikaatioissa [6]. Eri kontekstit mahdollistavat eri tarpeiden mukaiset API:t yksinkertaiselle bitmapille. Canvasille on määritelty esimerkiksi canvas2d-konteksti [5] joka sopii hyvin 2D-grafiikan piirtoon ja webGL [2] joka soveltuu paremmin 3D grafiikan piirtoon.<br>
+  <br>
+  Kontekstit ovatkin canvas elementin parhaimpia ominaisuuksia. Ne mahdollistavat erillaisten API:en integroimisen ECMAScriptiin jotka voidaan toteuttaa selainpuolella siten, että ne käyttävät paikallisen koneen resursseja tehokkaammin. Varsinkin webGL joka on 3D Canvas konteksti vaatii tehoksta grafiikan piirtoa ja käsittelyä. Tämä mahdollistaa paljon tehokkaamman tavan animoida ja luoda grafiikkaa verrattuna esim. SVG ja ECMAScriptin yhdistelmään.<br>
+  <br>
+  Microsoftin ja muut kaupalliset tahot ovat luonneet vastaavia ratkaisuja kuten Silverlight jotka käyttävät paikallista grafiikkakorttia grafiikan käsittelyyn. Nämä ovat kuitenkin kaikki vaatineet oman lisäosan selaimeen eikä näin ole toimineet kaikilla käyttäjillä. Canvasin etuna on näin avoin ilmainen standardi joka toimii suoraan selaimessa ilman lisäosia.<br>
+  <br>
+  Seuraavissa osioissa perehdymme 2D- ja 3D-konteksteihin. Työssämme tulemme tarvitsemaan 2D-piirtoa.<br>
+  <h3>
+    2D Context
+  </h3>
+  <font size=2><i>Tämän osion tiedot perustuvat kaikki WHATWG:n Canvas 2D tämän hetkiseen (1.3.2010) määritykseen jotka voivat vielä muuttua. Kaikkia ominaisuuksia ei myöskään ole tuettu kaikissa selaimissa.</i></font><br>
+  <br>
+  2D-konteksti sisältää kaikki olennaisimmat 2D-grafiikan käsittelyyn liittyvät toiminnot. 2D-kontekstin käyttöönotto tapahtuu seuraavalla tavalla:<br>
+  <br>
+  <div style=MARGIN-LEFT:40px>
+    <font face="'Courier New'">var canvas = document.getElementById('canvas');<br>
+    var 2dcontext = canvas.getContext('2d');</font><br>
+  </div>
+  <br>
+  2dcontext-muuttuja sisältää tämän jälkeen CanvasRenderingContext2D-olion, joka viittaa "canvas" id:n omaavaan Canvas-elementtiin. Yhdessä Canvas-elementissä voi olla ainoastaan yksi 2D-konteksti. Jos konteksti haetaan uudestaan se palauttaa saman kontekstin. Alla esimerkki tällaisesta tilanteesta:<br>
+  <div style=MARGIN-LEFT:40px>
+    <br>
+    <font face="'Courier New'">var toinen2dcontext = canvas.getContext('2d');<br>
+    console.log(toinen2dcontext === 2dcontext); // palauttaa aina true</font><br>
+  </div>
+  <br>
+  2D-konteksti sisältää 2D-grafiikan muokkaamiseen ja piirtämiseen vaaditut metodit. Kyseisistä metodeista voi lukea lisää lähteestä [5].<br>
+  <h3>
+    WebGL Context
+  </h3>
+  WebGL-konteksti luodaan samalla tavalla ja sitä käsitellään samalla tavalla kuin 2D-kontekstia. Se tarjoaa kuitenkin erillaisen API:n joka on enemmän openGL-tyyppinen. Se tarjoaa 3D-mallinnukseen, 3D-animoimiseen ja -asetteluun vaadittavat työkalut.<br>
+  <br>
+  <hr class=pb>
+  <h2>
+    Lähteet
+  </h2>
+  <div>
+    [1] W3C HTML current status <a href=http://www.w3.org/standards/techs/html#w3c_all title=http://www.w3.org/standards/techs/html#w3c_all>http://www.w3.org/standards/techs/html#w3c_all</a>. Viitattu 28.2.2010.
+  </div>
+  <div>
+    [2] WebGL Specification working draft&nbsp;<a href=https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/doc/spec/WebGL-spec.html title=https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/doc/spec/WebGL-spec.html>https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/doc/spec/WebGL-spec.html</a>. Viitattu 28.2.2010.<br>
+  </div>
+  <div>
+    [3] YouTube HTML5 Video Player. [verkkosivu]. Saatavilla:&nbsp;<a href=http://www.youtube.com/html5 style=COLOR:#551a8b>http://www.youtube.com/html5</a>. Viitattu 1.3.2010.<br>
+  </div>
+  <div>
+    <font size=2>[4] HTML 5 Editor Ian Hickson discusses features, pain points, adoption rate and more. [verkkoartikkeli]. Saatavilla:&nbsp;<a href=http://blogs.techrepublic.com.com/programming-and-development/?p=718 style=COLOR:#551a8b title=http://blogs.techrepublic.com.com/programming-and-development/?p=718>http://blogs.techrepublic.com.com/programming-and-development/?p=718</a>. Viitattu 1.3.2009</font>
+  </div>
+  <div>
+    [5] WHATWG "The canvas element". Saatavilla:&nbsp;<a href=http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#2dcontext style=COLOR:#551a8b title=http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#2dcontext>http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#2dcontext</a>. Viitattu 28.2.2010.
+  </div>
+  [6] W3C "The Canvas element" html 5 specification working draft. Saatavilla:&nbsp;<a href=http://dev.w3.org/html5/spec/the-canvas-element.html#the-canvas-element title=http://dev.w3.org/html5/spec/the-canvas-element.html#the-canvas-element>http://dev.w3.org/html5/spec/the-canvas-element.html#the-canvas-element</a>. Viitattu 28.2.2010.
+</div>
+<br>
+<br>
+<br>
+<hr class=pb><br>
+<h1>
+  Työsuunnitelma
+</h1>
+<h3>
+  <font size=3>Harjoitustyön yleinen kuvaus</font>
+</h3>
+Harjoitustyön tarkoituksena on selvittää HTML5:n Canvas-elementin käyttöä yhdessä dynaamisten Canvas API:en tarjoamien toimintojen kanssa. Tarkoituksena on opetella Canvas-elementin käyttöä ja kokeilla sitä käytännössä. Haluamme olla kehityksen mukana HTML5:n tulon ohella, joten aihe on molemmille hyvin kiinnostava. Web-tekniikat ovat jo ennestään tuttuja, joten myös tämä vaikutti aihepiirin valintaan.<br>
+<br>
+Työssä tullaan käyttämään seuraavia teknologioita:<br>
+<ul>
+  <li>
+    HTML 5 Canvas
+  </li>
+  <li>
+    Canvas 2D context<br>
+  </li>
+  <li>
+    CSS
+  </li>
+  <li>
+    JavaScript/JQuery
+  </li>
+  <li>
+    DOM
+  </li>
+</ul>
+<br>
+HTML5:n Canvas -elementti on siis työn pääosassa, mutta mukaan kuuluu myös muita web-kehityksen peruspaletteja. CSS-tyylitiedostoja käytetään sivujen tyylien määrittelyyn ja JavaScript:in avulla mahdollistamme sivuston dynaamisen toiminnallisuuden. JavaScript-kehityksen helpottamiseksi käytämme hyväksemme JQuery-kirjastoa [1], joka tarjoaa reilusti valmista dynaamista toiminnallisuutta sivustolle. Vaikka JQuery ei ole JavaScript-kirjastoista kaikista suorituskykyisin, valitsimme sen tähän projektiin, sillä sen käyttö ja opettelu on erittäin helppoa. Lisäksi valintapäätökseen vaikutti myös ryhmän henkilökohtainen kokemus. DOM, eli Document Object Model, puolestaan kuvaa vain olioiden käsittelytapaa JavaScript-puolella, tähän ei liity sen suurempia teknisiä linjavetoja.<br>
+<br>
+HTML5 on internetin kehitteillä oleva tekniikka, joka tekee yhä räväkämmin tuloaan tällä hetkellä. Moderneimmista selaimista löytyy jo HTML5-merkkikieltä tukevia ominaisuuksia. HTML5 tulee selventämään dokumenttien rakennetta yhä entisestään nimeämällä HTML:n tagit selkeämmin nimin. Lisäksi HTML5 tulee sisältämään myös HTML-merkkikielelle aikaisemmin tuntemattomia ominaisuuksia, kuten tässä harjoitustyössä käsitellyn Canvas-elementin sekä sen kautta animoinnin mahdollistamisen. [2, 3]<br>
+<br>
+Canvas-elementti, jonka HTML5 tarjoaa uutena ominaisuutena, on käytännössä HTML-merkkikielen sekaan sijoitettava elementti, jonka avulla on mahdollista tuottaa sekä 2D että 3D-grafiikkaa. Tätä elementtiä voi käsitellä myös JavaScript:in avulla ja HTML5:n spesifikaatio määrittelee valmiit JavaScript-funktiot Canvas-elementille, joiden avulla on mahdollista toteuttaa animaatiota. [4, 5] Tulemme hyödyntämään työssämme molempia Canvas-elementin ominaisuuksia.<br>
+<br>
+<h3>
+  <font size=3>Harjoitustyön tarkempi kuvaus</font>
+</h3>
+Harjoitustyön tarkoituksena on päästä käsiksi HTML5:n mukaanaan tuomaan toiminnallisuuteen ja kartoittaa sen mahdollisuuksia. Vanhemman, jo kauan käytössä olleen, SVG:n ja uudemman HTML5:n Canvas-elementin eroja tuodaan harjoitustyössä esille. Tähän päämäärään pyrimme luomalla sovelluksen, jossa Canvas-elementin avulla saavutetaan käyttäjän kannalta huomattavaa lisäarvoa. HTML5 Canvas:n ja SVG suurimmat erot harjoitustyön kannalta ovat [6]:<br>
+<br>
+<table border=1 bordercolor=#000000 cellpadding=3 cellspacing=0 height=67 id=q3hd style=TEXT-ALIGN:center width=382>
+  <tbody>
+  <tr style=TEXT-ALIGN:left>
+    <td width=50%>
+      <font size=3><b>SVG</b><br>
+      </font>
+    </td>
+    <td width=50%>
+      <font size=3><b>HTML 5 Canvas</b><br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=50%>
+      <font size=3>Piirtää geometrioita<br>
+      </font>
+    </td>
+    <td width=50%>
+      <font size=3>Piirtää pikseleitä<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=50%>
+      <font size=3>Käyttää DOM:ia (SVG DOM)<br>
+      </font>
+    </td>
+    <td width=50%>
+      <font size=3>Ei ole sisäistä DOM:ia<br>
+      </font>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<br>
+Tämän perusteella Canvasilla grafiikan sujuva animointi ja kuvankäsittely on tehokkaampaa ja helpompaa kuin SVG:llä [6]. Osoittaaksemme nämä Canvasin ominaisuudet todeksi olemme päättäneet luoda Whiteboard-nimisen sovelluksen. Tämä tarkoittaa käytännössä yksinkertaista esitystaulua joka toimii interaktiivisesti käyttäjän kanssa. Esitytaulun perusominaisuuksiin kuuluvat:<br>
+<ul>
+  <li>
+    piirto erivärisillä tusseilla
+  </li>
+  <li>
+    kumitustyökalu jolla voi poistaa piirettyjä asioita
+  </li>
+</ul>
+<br>
+Esitystaulun perusominaisuuksien lisäksi olemme päättäneet luoda seuraavat ominaisuudet, jotta HTML Canvas-elementin ominaisuudet korostuisivat:<br>
+<ul>
+  <li>
+    kuvan transformointi, skaalaus ja rotaatio
+  </li>
+  <li>
+    edellisten ominaisuuksien peruuttaminen
+  </li>
+  <li>
+    mahdollisuus siirtyä ajassa taaksepäin jolloin viimeksi piirretyt asiat poistuvat
+  </li>
+  <li>
+    mahdollisuus animoida piirosta alusta loppuun
+  </li>
+</ul>
+<br>
+Lisähaastetta harjoitustyöllemme tulee siitä, että HTML 5 Canvasin bitmappia ei voi sujuvasti tallentaa ja yksinkertaista perumistoimintoa ei ole olemassa. Tämä väite perustuu HTML 5 Canvas elementin tämänhetkiseen määritykseen [7].<br>
+<br>
+Sovellus luodaan&nbsp;<i>proof-of-concept</i>&nbsp;-tyylillä, eli pyrimme esittämään edellämainitut ominaisuudet toimiviksi pyrkimättä täydelliseen lopputulokseen. Sovellus tulee myös koostumaan ainoastaan selaimen puoleisesta tekniikasta ja sen tulisi toimia uusimmissa Firefox- ja Google Chrome -selaimissa.
+<h2>
+  <font size=4>Tehtävät</font>
+</h2>
+<div>
+  Allaolevaan taulukkoon olemme keränneet tehtävät ja niihin arvioitu ajankäyttö.
+</div>
+<br>
+<table border=1 bordercolor=#000000 cellpadding=3 cellspacing=0 id=mp2o style=HEIGHT:640px;WIDTH:666px>
+  <tbody>
+  <tr style=TEXT-ALIGN:left>
+    <td bgcolor=#9fc5e8 width=33.333333333333336%>
+      <font size=3>Tehtävän kuvaus<br>
+      </font>
+    </td>
+    <td bgcolor=#9fc5e8 width=33.333333333333336%>
+      <font size=3>Arvioitu työmäärä<br>
+      </font>
+    </td>
+    <td bgcolor=#9fc5e8 width=33.333333333333336%>
+      <font size=3>Toteutunut työmäärä<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Esiselvityksen kirjoittaminen<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>3h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Työsuunnitelman kirjoittaminen<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>2.5h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Subversion repository asentaminen tai google code pojektin luominen<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0.5h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>HTML alustan tekeminen<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0.5h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>HTML canvasin ja teknologian opiskelua<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>5h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Whiteboard ohjelman arkkitehtuurin suunnittelu<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Piirto erivärisillä tusseilla<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>3h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Kumitustyökalu jolla voi poistaa piirettyjä asioita<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>3h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Kuvan transformointi, skaalaus ja rotaatio<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>2h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Kuvan transformaation, skaalauksen tai rotaation peruuttaminen<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>2h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Mahdollisuus siirtyä ajassa taaksepäin jolloin viimeksi piirretyt asiat poistuvat<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Mahdollisuus animoida piirosta alusta loppuun.<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Loppuraportin kirjoittaminen<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td bgcolor=#fce5cd width=33.333333333333336%>
+      <font size=3><b>Yhteensä</b></font>
+    </td>
+    <td bgcolor=#fce5cd width=33.333333333333336%>
+      <font size=3>81h<br>
+      </font>
+    </td>
+    <td bgcolor=#fce5cd width=33.333333333333336%>
+      <font size=3>10.5h<br>
+      </font>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<br>
+<h2>
+  <font size=4>Työkalut</font>
+</h2>
+Työympäristönä käytämme jo luotua Google Code -projektia&nbsp;<a href=http://code.google.com/p/html-5-canvas-whiteboard/ id=ne1l style=COLOR:#551a8b title=html-5-canvas-whiteboard>html-5-canvas-whiteboard</a>. Google Code tarjoaa wiki:n projektimme dokumentaatiota varten, tehtävänhallinta-työkalun sekä subversion-varaston koodillemme.<br>
+<h2>
+  <font size=4>Alustava tekninen suunnitelma</font>
+</h2>
+Harjoitustyön tekninen toteutus tulee seuraamaan MVC-arkkitehtuuria. Näin voimme varmistaa selkeän koodi rakenteen ja tehokkaamman ryhmätyöskentelyn. Piirroksen mallia joudumme kuitenkin suunnittelemaan hieman etukäteen. Grafiikoiden kuvauksessa löytyy valmiita kirjastoja ja määritelmiä kuten GeoJSON. GeoJSON on tarkoitettu kartografiikan siirtoformaatiksi ja kuvaamiskieleksi mutta soveltuu hyvin myös muuhun 2d grafiikan kuvaamiseen. Mahdolliseen kuvan tallennukseen tulemme myös käyttämään JSON-lähestymistapaa, sillä se on HTML5 Canvas:in kanssa ainoa lähestymistapa tallentaa haluamaamme dataa siten, että dataa voidaan hyödyntää ohjelmassamme myös jatkossa. Käytännössä siis kuva tuotettaisiin uudestaan JSON-olion sisältämän datan avulla. Yleisimpiin kuvaformaatteihin tallentaminen onnistuu suoraan saatavilla olevalla, MIT-lisenssin alaisella, Canvas2Image-kirjastolla [8].<br>
+<br>
+Tämän lisäksi tarvitsemme tavan kuvata itse Canvas:in tilan muutoksia ajallisesti. Yksi mahdollisuus on käyttää tapahtumien kuvaamista. Esimerkiksi DrawEvent- ja EraseEvent-metodit, joita voidaan järjestää ajallisesti peräkkäin.<br>
+<h2>
+  <font size=4>Lähteet</font>
+</h2>
+[1] JQuery-kirjaston kotisivu. Saatavilla:&nbsp;<a href=http://jquery.com/ id=ecba style=COLOR:#551a8b title=http://jquery.com/>http://jquery.com/</a>. Viitattu 9.2.2010.<br>
+[2] HTML5 - A vocabulary and associated APIs for HTML and XHTML. Saatavilla:&nbsp;<a href=http://dev.w3.org/html5/spec/Overview.html id=m2mt title=http://dev.w3.org/html5/spec/Overview.html>http://dev.w3.org/html5/spec/Overview.html</a>. Viitattu 9.2.2010.
+<div>
+  [3] Wikipedia: HTML5. Saatavilla:&nbsp;<a href=http://en.wikipedia.org/wiki/HTML5>http://en.wikipedia.org/wiki/HTML5</a>. Viitattu 10.2.2010.
+</div>
+<div>
+  [4] Wikipedia: Canvas element. Saatavilla:&nbsp;<a href=http://en.wikipedia.org/wiki/Canvas_element>http://en.wikipedia.org/wiki/Canvas_element</a>. Viitattu 10.2.2010.<br>
+  [5] HTML5 Canvas Examples. Saatavilla:&nbsp;<a href=http://www.phpguru.org/static/html5-canvas-examples id=dn2t style=COLOR:#551a8b title=http://www.phpguru.org/static/html5-canvas-examples>http://www.phpguru.org/static/html5-canvas-examples</a>. Viitattu 9.2.2010.<br>
+  [6] SVG &amp; Canvas: Graphics for the web. Saatavilla:&nbsp;<a href=http://people.mozilla.com/%7Evladimir/xtech2006/ id=la5_ title=http://people.mozilla.com/~vladimir/xtech2006/>http://people.mozilla.com/~vladimir/xtech2006/</a>. Viitattu 13.2.2010.<br>
+  [7] HTML 5 (including next generation additions still in development). Saatavilla:&nbsp;<a href=http://www.whatwg.org/specs/web-apps/current-work/multipage/ id=mpna style=COLOR:#551a8b title=http://www.whatwg.org/specs/web-apps/current-work/multipage/>http://www.whatwg.org/specs/web-apps/current-work/multipage/</a>. Viitattu 13.2.2010.<br>
+</div>
+[8] Canvas2Image: Saving canvas data to image file. Saatavilla:&nbsp;<a href=http://ajaxian.com/archives/canvas2image-save-out-your-canvas-data-to-images></a><a href=http://www.nihilogic.dk/labs/canvas2image/>http://www.nihilogic.dk/labs/canvas2image/</a>. Viitattu 1.3.2010<br>
+<hr class=pb><br>
+<h1>
+  Loppuraportti
+</h1>
+<p style=TEXT-ALIGN:left>
+  Loppuraportissa kerromme projektin työvaiheista, Whiteboard-sovelluksen rakenteesta sekä ohjelman ja tekniikan ongelmista ja puutteista. Lisäksi olemme sisällyttäneet raporttiin selostuksen työmme tuloksesta ja siihen liittyvistä havainnoista. Tuomme myös esille projektin synnyttämiä mietteitä niin valitusta tekniikasta kuin itse ohjelmastakin.
+</p>
+<h2>
+  Työn vaiheet
+</h2>
+<h2>
+  <font size=3>Alustava suunnitelma</font>
+</h2>
+<div>
+  Alustavan suunnitelman loimme projektille jo työsuunnitelma-vaiheessa. Kuvasimme tuolloin pääpiirteittäin, mitä sovellus tulee sisältämään ja aloitimme työn tämän pohjalta. Molemmille ryhmäläisille oli tässä vaiheessa selventynyt suurin piirtein, millainen lopullinen sovellus tulee olemaan.
+</div>
+<br>
+Emme luoneet mitään tarkempia suunnitelmia projektista, sillä pääpiirteittäinen tavoite oli osoittaa HTML5:n Canvas-elementin käyttökelpoisuus <i>proof-of-consept</i> -menetelmällä. Tyydyimme siis pelkästään työsuunnitelmaan ja aikatauluarvioon.<br>
+<br>
+<div>
+  Alkuvaiheessa sovimme myös pystyttävämme projektille SVN-varaston, jotta ohjelmointi olisi tehokkaampaa ryhmässä. Työtehtävistä sovittiin, että etukäteen ilmoitamme toinen toisillemme, mitä tulemme tekemään, jotta päällekkäisyyksiä ei pääsisi syntymään.<br>
+  <h3>
+    Ohjelmointiympäristön pystytys
+  </h3>
+  <div>
+    Pystytimme projektillemme SVN-varaston <a href=http://code.google.com/p/html-5-canvas-whiteboard/ id=h3px title="Google Code">Google Code</a> -palveluun [1]. Lisäksi kyseinen palvelu tarjoaa projektiin liittyvien asioiden seurantapalvelun, eli englanniksi issue tracker. Kyseisen seurantapalvelun avulla pidimme kirjaa tietyssä mielessä löydetyistä bugeista ja tehtävistä asioista. Kaikkia tehtäviä asioita emme sinne kuitenkaan lisänneet, vaan käytimme kyseistä palvelua lähinnä muistilistana, kun työn tekemiseen tuli pidempi tauko.
+  </div>
+  <br>
+  <div>
+    Päätimme myös käyttää pelkästään Firefox ja Chrome selaimia ohjelmoitujen asioiden toimivuuden kokeilussa. Ohjelmointiin käytimme Firefox:ssa Firebug lisäosaa ja Chromen sisäänrakennettu kehittäjän työkalupakkia. Muita työkaluja emme käyttäneet.
+  </div>
+  <br>
+  <div>
+    Ohjelmointityökaluista emme päättäneet mitään, eli kumpikin ryhmän jäsen valitsi itselleen parhaiten sopivat työkalut. Koska sovelluksen oli tarkoitus toimia pelkästään selaimessa ajettavalla koodilla ohjelmistotyökaluilla ei ollut suurempaa merkitystä. JavaScript-ohjelmointi ja HTML-merkkikielen kirjoittaminen onnistuu millä tahansa tekstieditorilla. JavaScript debuggaukseen käytimme sekä konsolilokia, että Firefox-selaimen virhekonsoli-ikkunaa. SVN-varastoon yhdistämiseen käytimme sekä Eclipse-ohjelmointiympäristön Subclipse-lisäosaa että Linux-ympäristön svn-ohjelmaa.
+  </div>
+  <div>
+    <h3>
+      Pohjan luominen
+    </h3>
+    <div>
+      Ohjelmointityön aloitimme peruspohjan luomisella, johon olisi helppo laajentaa kaikki haluamamme toiminnallisuus. Peruspohjan tarkoituksena oli siis luoda puitteet ohjelman rakentamiselle ja peruselementit, jotka ohjelma vaatii toimiakseen. Ohjelman ensimmäisessä toteutusversiossa ominaisuuksina olivat piirtaminen, värin valinta, kuvan suurennus, eli zoomaus, staattisella arvolla ja piirtotoimintojen animointi. Ensimmäinen versio sisälsi joitain bugeja ja koodin puolella asioita ei oltu vielä kovin selkeästi jaoteltu. Vaiheen tavoite kuitenkin saavutettiin, eli pohja työlle oli valmis.
+    </div>
+    <br>
+    <div>
+      Tästä eteenpäin koodaus jatkui ohjelman selkeyttämisellä koodin osalta sekä bugien korjauksella. Lisäksi alkuvaiheessa kesken jääneiden ominaisuuksien toteuttaminen kuului peruspohjan jälkeiseen vaiheeseen. Pohjan luonnin tuloksena oli MVC-arkkitehtuuriamme tukeva ohjelman rakenne, jossa kukin osa oli jaoteltu selkeästi omiin ohjelman osiin.
+    </div>
+    <h3>
+      Lisäominaisuuksien koodaus ja bugien korjaus
+    </h3>
+    Ohjelman pohjan valmistuttua ominaisuuksien lisääminen oli erittäin helppoa. Ensimmäiset lisäominaisuudet olivat muotojen piirtäminen ja käytettävyysparannukset, kuten se, ettei värin valinta edellyttänyt enää värivalintanapin painallusta erikseen, vaan työkalun valinta valitsi samalla värin. Ohjelmaan lisättiin myös toiminnallisuus, joka mahdollisti eri kursoreiden näyttämisen eri työkalujen ollessa valittuna. Lisäksi kuvan suurennusta, eli zoomausta, parannettiin siten, ettei kyseinen toiminnallisuus enää suurentanut tai pienentänyt kuvaa staattisilla arvoilla. Kyseistä ominaisuutta varten toteutettiin liu'utettava käyttöliittymäelementti, jonka avulla käyttäjä voi suurentaa kuvaa korkeintaan 200% sen alkuperäisestä koosta sekä palauttaa kuvan koon takaisin alkupisteeseensä. Myös aikaisemmin staattisen 90-asteen rotaation arvon valinta muutettiin käyttäjän määriteltäväksi. Lopuksi lisäsimme sovellukseen vielä tehtyjen asioiden peruuttamistoiminnon sekä valmiin Canvas2Image-kirjaston tarjoaman kuvan tallennusmahdollisuuden.
+  </div>
+  <br>
+  <div>
+    Tämä vaihe sisälsi myös bugien korjaamista ja koodin refaktorointia, eli uudelleenkirjoittamista tai selkeyttämistä. Lopputuloksessa varmasti löytyy vielä rutkasti parannettavaa, mutta tämän projektin puitteissa olemme tyytyväisiä.
+  </div>
+</div>
+<br>
+<h2>
+  Toteutunut työmäärä
+</h2>
+<div>
+  Taulukossa 1 on esitetty toteutunut työaika verrattuna työsuunnitelmassa oleviin arvioituihin työmääriin. Tehtävät jotka olemme joutuneet lisäämään projektin edetessä on merkattu keltaisella värillä. Liitteenä(liite1.html) on taulukko jota olemme käyttäneet projektin edetessä.
+</div>
+<br>
+<table border=1 bordercolor=#000000 cellpadding=3 cellspacing=0 id=mw11 style=HEIGHT:640px;WIDTH:666px>
+  <tbody>
+  <tr style=TEXT-ALIGN:left>
+    <td bgcolor=#9fc5e8 width=33.333333333333336%>
+      <font size=3>Tehtävän kuvaus<br>
+      </font>
+    </td>
+    <td bgcolor=#9fc5e8 width=33.333333333333336%>
+      <font size=3>Arvioitu työmäärä<br>
+      </font>
+    </td>
+    <td bgcolor=#9fc5e8 width=33.333333333333336%>
+      <font size=3>Toteutunut työmäärä<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Esiselvityksen kirjoittaminen<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>6h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Työsuunnitelman kirjoittaminen<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>7h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Subversion repository asentaminen tai google code pojektin luominen<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0.5h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0.5h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>HTML alustan tekeminen<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0.5h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>2h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>HTML canvasin ja teknologian opiskelua<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>11h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Whiteboard ohjelman arkkitehtuurin suunnittelu<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>6h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Piirto erivärisillä tusseilla<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>3h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>2h&nbsp;<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Kumitustyökalu jolla voi poistaa piirettyjä asioita<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>3h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>0.5h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Kuvan transformointi, skaalaus ja rotaatio<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>2h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>2h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Kuvan transformaation, skaalauksen tai rotaation peruuttaminen&nbsp;&nbsp;<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>2h<br>
+      </font>
+    </td>
+    <td bgcolor=#ffff00>
+      <font size=3>0h</font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Mahdollisuus siirtyä ajassa taaksepäin jolloin viimeksi piirretyt asiat poistuvat&nbsp;</font>
+    </td>
+    <td bgcolor=#ffff00>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>1.3h</font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Mahdollisuus animoida piirosta alusta loppuun.<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>4h</font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td bgcolor=#ffff00 width=33.333333333333336%>
+      <font size=3>Kuvioiden piirtomahdollisuus</font>
+    </td>
+    <td bgcolor=#ffff00 width=33.333333333333336%>
+      <font size=3>-</font>
+    </td>
+    <td bgcolor=#ffff00 width=33.333333333333336%>
+      <font size=3>2h</font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td bgcolor=#ffff00 width=33.333333333333336%>
+      <font size=3>Käytettävyysparannukset</font>
+    </td>
+    <td bgcolor=#ffff00 width=33.333333333333336%>
+      <font size=3>-</font>
+    </td>
+    <td bgcolor=#ffff00 width=33.333333333333336%>
+      <font size=3>2h</font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td bgcolor=#ffff00 width=33.333333333333336%>
+      <font size=3>Koodin refaktorointi</font>
+    </td>
+    <td bgcolor=#ffff00 width=33.333333333333336%>
+      <font size=3>-</font>
+    </td>
+    <td bgcolor=#ffff00 width=33.333333333333336%>
+      <font size=3>3h</font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td bgcolor=#ffff00 width=33.333333333333336%>
+      <font size=3>Testausta, validointia, jslint</font>
+    </td>
+    <td bgcolor=#ffff00 width=33.333333333333336%>
+      <font size=3>-</font>
+    </td>
+    <td bgcolor=#ffff00 width=33.333333333333336%>
+      <font size=3>2h</font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td width=33.333333333333336%>
+      <font size=3>Loppuraportin kirjoittaminen<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>10h<br>
+      </font>
+    </td>
+    <td width=33.333333333333336%>
+      <font size=3>14h<br>
+      </font>
+    </td>
+  </tr>
+  <tr style=TEXT-ALIGN:left>
+    <td bgcolor=#fce5cd width=33.333333333333336%>
+      <font size=3><b>Yhteensä</b></font>
+    </td>
+    <td bgcolor=#fce5cd width=33.333333333333336%>
+      <font size=3>81h<br>
+      </font>
+    </td>
+    <td bgcolor=#fce5cd width=33.333333333333336%>
+      <font size=3>65.3h</font>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<div style=TEXT-ALIGN:center>
+  <br>
+</div>
+<div style=TEXT-ALIGN:center>
+  <b>Taulukko 1. Projektin toteutunut työmäärä.</b>
+</div>
+<div style=TEXT-ALIGN:left>
+  <br>
+</div>
+<div style=TEXT-ALIGN:left>
+  Aikataulullisesti projekti oli hyvin onnistunut. Missään työvaiheessa ei tullut suurempaa kiirettä ja olimme jo ajoissa liikkeellä kussakin työvaiheessa. Projekti ei tietenkään ole täydellinen, eli tietyissä pisteissä olemme myös työtaakkaa karsineet, mutta tämä on puolestaan auttanut pitämään työmäärän siedettävänä projektiin varattuun aikaan nähden.
+</div>
+<h2>
+  Kuvaus luodusta ohjelmasta
+</h2>
+<p>
+  Whiteboard on yksinkertainen piirtosovellus jossa on mahdollisuus käyttäjän tekemien piirtotoimintojen animointiin. Ohjelma on luotu suunnitelman mukaan HTML5:tä ja JavaScriptiä (EcmaScript) hyväksikäyttäen. Osa ohjelman toiminnallisuudesta on toteutettu valmiiden JavaScript-kirjastojen avulla.
+</p>
+<h3>
+  Sovelluksen rakenne
+</h3>
+<div>
+  Ohjelma on luotu MVC-arkkitehtuurilla (Model-View-Controller) hajauttaen koodia eri paikkoihin. Kuva 1 esittää, kuinka MVC-arkkitehtuuria on hyödynnetty Whiteboard-sovelluksessa.
+</div>
+<br>
+<div style=TEXT-ALIGN:center>
+  <img src="images/df9khrwq_39g44sxsft_b.png" style=HEIGHT:699.158px;WIDTH:648px>
+</div>
+<div>
+  <div style=TEXT-ALIGN:center>
+    <b>Kuva 1. Whiteboard-sovelluksen MVC-arkkitehtuuri.</b>
+  </div>
+  <div style=TEXT-ALIGN:center>
+    <br>
+  </div>
+  <h4>
+    Model, Malli
+  </h4>
+  <div>
+    Mallissa on stattinen listarakenne, johon on tallennettu tapahtumat (Whiteboard.events). Nämä tapahtumat on kuvattu luokkien avulla, esimerkiksi "BeginPath" ja "BeginShape". Kaikki tapahtumaluokat omaavat attribuutit "type" ja "time", eli tyyppi ja aika. Tyyppi kertoo, minkä tyyppistä tapahtumaoliota kyseinen olio kuvaa. Aika kertoo, milloin tapahtumaolio on luotu.
+  </div>
+  <br>
+  Itse tapahtumat ja niiden oliot tallennetaan yksinkertaiseen taulukkoon Whiteboard.events. Kyseisessä taulukossa ne ovat aikajärjestyksessä ja se toimii mallin tietorakenteena.
+</div>
+<br>
+<div id=och7 style=TEXT-ALIGN:center>
+  <img src="images/dhd9qwkn_95scczdmc4_b.png" style=HEIGHT:451.317px;WIDTH:648px>
+</div>
+<div style=TEXT-ALIGN:center>
+  <b>Kuva 2. Mallin luokka rakenne.</b>
+</div>
+<div style=TEXT-ALIGN:left>
+  <b><br>
+  </b>
+</div>
+<div style=TEXT-ALIGN:left>
+  Malli on kirjoitettu puhtaalla JavaScriptillä ilman JQuery-kirjaston ominaisuuksia. Päätimme tehdä tällä tavalla, jotta sitä voisi helpommin hyödyntää muiden JavaScript kirjastojen tai ohjelmien yhteydessä. Tästä syystä emme ole käyttäneet luokkien perintää ja UML-kaaviossa luokka Events on oikeasti vain taulukko.
+</div>
+<h4>
+  View, Näkymä
+</h4>
+<div>
+  Näkymä on on toteutettu Internet-sovellukselle tyypillisesti &nbsp;HTML:n, CSS:n sekä HTML DOM:in avulla. DOM:in kautta sovelluksen käyttöliittymä kuuntelee tapahtumia. Näkymä on luotu yksinkertaiseksi, jotta sen voisi tarvittaessa vaihtaa käyttäjäystävällisemmäksi tai muuten erilaiseksi. Olemme myös käyttäneet jQuery-kirjastoa, jonka avulla näkymään on luotu hieman interaktiivisuutta. Näkymän kautta sovellus kuuntelee käyttäjän tapahtumia ja kutsuu ohjaimen (controller) funktioita.
+</div>
+<div>
+  <h4>
+    Controller, Ohjain
+  </h4>
+  Ohjain suorittaa näkymän luomat funktiokutsut. Nämä kutsut ovat suurimmilta osin vuorovaikutuksessa mallin kanssa. Esimerkiksi käyttäjän piirtäessä viivan, ohjain luo malliolion piirroksesta ja lisää sen mallin tapahtumalistaan.
+</div>
+<br>
+<div id=vz5q style=TEXT-ALIGN:center>
+  <img src="images/dhd9qwkn_96mtr7mbg8_b.png" style=HEIGHT:470px;WIDTH:243px>
+</div>
+<div style=TEXT-ALIGN:center>
+  <b>Kuva 3. Whiteboard ohjain luokka</b>
+</div>
+<br>
+Ohjain-luokka on kuvattu kuvassa 3. Sen kautta kulkee kaikki näkymän luomat tapahtumat. Näiden tapahtumien perusteella ohjaimen kutsutut funktiot muokkaavat mallia ja canvas-elementtiä. Myös ohjain on luotu ilman vaatimusta jQuery-kirjastosta.<br>
+<h3>
+  Ulkoiset kirjastot
+</h3>
+<p>
+  Sovelluksemme rakennuksessa on hyödynnetty ulkoisia kirjastoja. Whiteboard-sovellus vaatii toimiakseen seuraavat kirjastot:
+</p>
+<p>
+</p>
+<ul>
+  <li>
+    jQuery 1.4.2
+  </li>
+  <ul>
+    <li>
+      Helpottaa käyttöliittymätoiminnallisuuden hallintaa
+    </li>
+    <li>
+      <a href=http://docs.jquery.com/Downloading_jQuery>http://docs.jquery.com/Downloading_jQuery</a><br>
+    </li>
+  </ul>
+  <li>
+    jQuery UI 1.8
+  </li>
+  <ul>
+    <li>
+      Tarjoaa valmiita ominaisuuksia käyttöliittymän kirjoittamiseen
+    </li>
+    <li>
+      Suositellaan käytettävän täyttä kirjastoa
+    </li>
+    <li>
+      Pakollinen kirjaston vaatimus on draggable-ominaisuus tämän vaatimine komponentteineen
+    </li>
+    <li>
+      <a href=http://jqueryui.com/download>http://jqueryui.com/download</a><br>
+    </li>
+  </ul>
+  <li>
+    Yahoo reset.css
+  </li>
+  <ul>
+    <li>
+      Helpottaa selaintenvälisten erojen hallintaa css-oletusarvoissa
+    </li>
+    <li>
+      <a href=http://developer.yahoo.com/yui/reset/>http://developer.yahoo.com/yui/reset/</a>
+    </li>
+  </ul>
+  <li>
+    Canvas2Image + JavaScript Base64
+  </li>
+  <ul>
+    <li>
+      Tallentaa canvas-kuvan valittuun kuvaformaattiin
+    </li>
+    <li>
+      <a href=http://www.nihilogic.dk/labs/canvas2image/>http://www.nihilogic.dk/labs/canvas2image/</a>
+    </li>
+  </ul>
+</ul>
+<br>
+<div>
+  Lisäksi sovellus vaatii toimiakseen debuggaukseen käyttämämme itse rakennetun console-kirjaston, mikäli käytetty selain ei tarjoa valmiiksi määriteltyä konsolia JavaScriptin window.console-muuttujassa. Kaikki sovelluksen vaatimat kirjastot toimitetaan sen asennuspakkauksessa ja ne ovat myös saatavilla projektin SVN-varastosta.
+</div>
+<h3>
+  Ohjelman toimivuus
+</h3>
+<p>
+  Ohjelma on suunniteltu toimivaksi moderneissa Internet-selaimissa, jotka tukevat laajasti JavaScript-toimintoja sekä HTML5:n Canvas-elementtiä. Emme keskittyneet tässä työssä kuitenkaan ohjelman yhteensopivuusasioihin mahdollisimman monissa selaimissa, vaan ainoastaan ohjelman toteuttamiseen siten, että sen ainakin periaatteessa pitäisi toimia API-kuvauksia noudatettaessa.
+</p>
+<p>
+  <br>
+</p>
+<p>
+  Ohjelma on todettu toimivaksi seuraavissa selaimissa:
+</p>
+<p>
+</p>
+<ul>
+  <li>
+    Google Chrome 5.0
+  </li>
+  <li>
+    Mozilla Firefox 3.6.3
+  </li>
+</ul>
+<p>
+  <br>
+</p>
+<p>
+  Koodin laadunvarmistukseen olemme käyttäneet W3C:n <a href=http://validator.w3.org/ id=p5za title=HTML>HTML</a> ja <a href=http://jigsaw.w3.org/css-validator/ id=kqbs title=CSS>CSS</a> validointipalvelua ja&nbsp;<a href=http://www.jslint.com/ id=jyh6 title=JSLint>JSLint</a>&nbsp;javascriptin korjaamiseen.
+</p>
+<h3>
+  Ohjelman hankkiminen
+</h3>
+<div>
+  Ohjelman asennuspaketin voi noutaa projektimme kotisivulta&nbsp;<i>Downloads</i>-välilehden alta. Kyseinen paketti sisältää kaikki projektimme vaatimat elementit ja ohjelman voi käynnistää purkamalla kyseisen kansion haluamaansa paikkaan ja avaamalla index.html -tiedoston selaimilla, joilla sovellus on todettu toimivaksi.
+</div>
+<br>
+<div>
+  Projektimme kotisivu:&nbsp;<a href=http://code.google.com/p/html-5-canvas-whiteboard/ style=COLOR:#551a8b>http://code.google.com/p/html-5-canvas-whiteboard/</a><br>
+</div>
+<div>
+  Downloads-välilehti:&nbsp;<a href=http://code.google.com/p/html-5-canvas-whiteboard/downloads/list style=COLOR:#551a8b>http://code.google.com/p/html-5-canvas-whiteboard/downloads</a>/
+</div>
+<div>
+  <h2>
+    Ongelmat ja puutteet
+  </h2>
+  <div>
+    Vaikka ryhmämme onkin lopputulokseen hyvin tyytyväinen, ei se silti ole täydellinen. Ohjelmaan jäi edelleen muutama selvittämätön ongelma sekä yksi puute alkuperäiseen suunnitelmaamme nähden. Nämä seikat esitellään seuraavien alaotsikoiden alla.
+  </div>
+  <br>
+  <h3>
+    Ongelmat
+  </h3>
+  <h4>
+    Kuvan tallennus toimii vain PNG-muodossa
+  </h4>
+  <div>
+    Valitsemamme Canvas2Image-kirjaston avulla kuvan tallennus onnistuu vain PNG-muotoon, vaikka kyseinen kirjasto tarjoaa myös mahdollisuuden tallentaa kuva JPG- ja BMP-muodoissa. Testattuamme kuitenkin molemmissa muodoissa on lopputuloksena joko tyhjä kuva tai täysin musta kuva. Kyseisen kirjaston dokumentaatio tosin ilmoittaa JPG-muodon olevan mahdollinen vain Mozilla Firefox -selaimella, mutta kehitysympäristöissämme myös kyseisellä selaimella JPG-muoto aiheuttaa mustan kuvan.
+  </div>
+  <br>
+  <div>
+    Tosin selainten canvas-toiminnallisuus on vasta hyvin alkuvaiheessa ja kyseiseen toiminnallisuuteen tämä oli ainoa löytämämme vapaasti jaettavissa oleva JavaScript-kirjasto. Kyseinen kirjasto luo sekä JPG- että PNG-kuvat Canvasin toDataUrl-funktiolla, joka on ilmeisesti tällä hetkellä määritelty siten, että ainoastaan PNG-muoto on standardin mukaan selaimelta pakollinen vaatimus [2]. Lisäksi musta tausta kuvissa saattaa liittyä lähteen [2] mainitsemaan asiaa, jonka mukaan alpha-kanavia tukemattomiin kuvaformaatteihin tallennus vaatii kuvan muodostamisen mustan kerroksen avulla. Tämä siis voi olla myös bugi käyttämässämme kirjastossa.
+  </div>
+  <h4>
+    Suuri määrä kuvan rotaatioita tuottaa epäselvän kuvan
+  </h4>
+  Avoimeksi ongelmaksi jäi loppuvaiheessa edelleen se seikka, että useat peräkkäiset kuvan rotaatiot aiheuttavat kuvan epäselvenemisen. Arvelimme tämän johtuvan kuvalle tehtävistä transformaatioista ennen ja jälkeen rotaatiota, mutta emme ehtineet korjata tätä kuntoon.
+</div>
+<br>
+<div>
+  Tämän korjaaminen vaatii käytännössä transformoidun kuvan leveyden ja korkeuden uudelleenlaskemista ja rotaatiotoiminnallisuuden uudelleenkirjoittamista siltä osin, että alkuperäinen kuvakoko säilyymuistissa, jotta kuvan koko ei uudelleenlaskettujen kokojen kautta pääse muuttumaan, kun transformaation arvo on 90 jaollinen. Toinen kiertotie tämän ongelman ratkaisemiseksi olisi luultavasti tarjota ainoastaan 90 jaollisia rotaatiomahdollisuuksia, mutta tämä ei kuitenkaan palvele käyttäjän tarpeita tarpeeksi hyvin.<br>
+  <h4>
+    Rotaatiossa häviää canvasin ulkopuolelle jäävät merkinnät
+  </h4>
+</div>
+<div>
+  Myös tämä seikka liittyy kuvan transformaatioon. Kuvan leveyden ja korkeuden arvot tulisi asettaa rotaation jälkeen uusiksi, jolloin yksikään kuvan osa ei jäisi piirtoalueen ulkopuolelle.
+</div>
+<h4>
+  Nopea hiirenliike kumituksessa aiheuttaa kumituksen pätkimistä
+</h4>
+<div>
+  Liikuttamalla hiirtä nopeasti kumitustyökalun ollessa käytössä, ei kaikki hiiren linjalla olevat piirretyt asiat kumitu oikein, vaan kumituksessa näkyy pätkimistä. Tämä johtuu siitä, että kumitusta varten Canvas API ei tarjoa polkukäsittelyä (path), joten kumitus on toteutettu puhdistamalla 5 pikseliä leveä neliö jokaisesta hiiren liikkeen osoittamasta paikasta kumituksen aikana.
+</div>
+<br>
+<div>
+  Korjausehdotuksena tähän voisi olla esimerkiksi tarkempi hiiren liikkeiden tallentaminen ja kumittaminen hiiren liikkeen alueella jokaisen 5 pikselin jälkeen. Kumitustapahtuma ei siis tällöin olisi suoranaisesti sidoksissa hiiren liikkeisiin, eli piirron tai canvasin tapahtumakirjausten hitauden aiheuttama viive ei tällöin vaikuttaisi kumitukseen. Tällöin siis ohjelmallisesti puhdistettaisiin jokaisen 5 pikselin jälkeen uusi neliö kuljetulla polulla. Vielä puhtaamman kumituksen saisi aikaan muuttamalla puhdistettavan neliön muodon muistuttamaan canvas polun luoman piirron muistuttamaa kuviota.
+</div>
+<h4>
+  Yksittäisen pisteen piirtäminen ei ole mahdollista piirtotyökalulla
+</h4>
+Piirtotyökalulla ei ole mahdollista piirtää yksittäistä pistettä painamalla piirtotyökalulla jotain piirtoalueen kohtaa liikuttamatta hiirtä. Korjata tämän voisi siten, että aloitettaessa piirto, piirrettäisiin polun aloittavaan kohtaan jokin kuvio, kuten ympyrä.<br>
+<h4>
+  JavaScript ei tue säikeitä joka rajoittaa animointia
+</h4>
+Javascriptin ainoat mahdollisuudet "säikeistää" sovellusta on käyttää ajastusfunktioita setTimeout, setInterval ja clearTimeout. Nämä eivät kuitenkaan mahdollista perinteisten ohjelmointikielien säikeistämisen etuja. Jos animoinnissa haluttaisiin esimerkiksi animoida kahta riippumatonta oliota, pitäisi aluksi luoda jokin järkevä alusta kyseiselle toiminnolle.<br>
+<div>
+  <h3>
+    Puutteet
+  </h3>
+  <h4>
+    Canvas bitmap-tallennus
+  </h4>
+  <div>
+    Ryhmältämme loppui aika canvas:in bitmap-tallennukseen tarkempaan tutustumiseen. Päädyimme sen sijaan käyttämään Canvas2Image-nimistä kirjastoa, jonka avulla kuvan tallentaminen PNG-kuvaformaattiin on mahdollista. Kyseinen kirjasto esittää myös tavan luoda canvas datasta bitmap-dataa, mutta bitmap:in tallennusta kyseinenkään kirjasto ei osaa onnistuneesti tehdä selaimilla, joilla sovellus on määritelty toimivaksi. Syyt tähän voivat liittyä PNG-tallennusongelmassa esiintuotuihin seikkoihin. Bitmap-datan saa kyllä BMP-muodon edellyttämällä tavalla kirjoitettua tekstimuodossa JavaScriptillä muokkaamalla Canvas2Image-kirjastoa sopivasti tähän tarkoitukseen, mutta tähän emme perehtyneet tämän tarkemmin.
+  </div>
+  <h2>
+    Tulokset ja havainnot
+  </h2>
+  HTML5 Canvas on hyvin käyttökelpoinen graafisten sovellusten luomisessa Internetiin. Piirto-ominaisuuksiensa ansiosta Canvasin avulla voi korvata monien sivustojen käyttämät Flash-lisäosat. Lisäksi HTML5:n mukanaan tuomien muidenkin ominaisuuksien ansiosta on lähes kaikki Flash-pohjaiset Internet-sovellukset mahdollista toteuttaa tulevaisuudessa puhtaasti HTML-pohjaisesti. JavaScript ei kuitenkaan tue säikeitä joka rajoittaa HTML 5 canvas apien täyttä hyödyntämistä.
+</div>
+<br>
+<div>
+  Onnistuimme mielestämme lopputuloksessa. Projektin tavoitteena oli toteuttaa sovellus<i>&nbsp;proof-of-concept </i>-tyylillä. Luotu sovellus demonstroi Canvas-elementin käyttöpotentiaalia ja näyttää, kuinka grafiikkaa on mahdollista luoda HTML-sivulla kyseistä elementtiä hyödyntämällä. Tavoite &nbsp;tämän suhteen on siis täyttynyt projektin myötä.<br>
+</div>
+<br>
+<div>
+  Havaitsimme myös MVC-arkkitehtuurin hyvin käytännölliseksi siinä mielessä, että halutessaan canvasia kontrolloivan Whiteboard-luokan voi integroida myös muihin projekteihin. Tämä olikin yhtenä tavoitteena koodin refaktoroinnin kautta ja pyrimme siihen, että varsinainen ohjainluokka ei tarvitsisi toimiakeen ulkoisia kirjastoja. Huomasimme, että jQuery-kirjastot tuovat lisäarvoa vain käyttöliittymäympäristöön ja sen toteuttamiseen, ei niinkään ohjelman sisäiseen rakenteeseen.
+</div>
+<h2>
+  Kokemukset ja mielipiteet
+</h2>
+<div>
+  Tutustuminen HTML5 Canvasiin osoittautui hyvin mielenkiintoiseksi ja hyödylliseksi. Tulevaisuudessa yhä enemmän asioista tullaan tekemään varmasti HTML5:tä hyväksi käyttäen, joten projektin hyödyt tulevat varmasti näkymään myös työelämässä.
+</div>
+<br>
+Aihe oli molemmille ryhmäläisille myös luonteva, sillä kokemusta Internet-sivujen toteutuksesta ja JavaScript-koodauksesta löytyi molempien historiasta. Tämä projekti auttoikin siis kartuttamaan jo aikaisempia taitoja ja edesauttoi siinä, että koodin tyyliseikkoihin ja rakenteeseen ei tarvinnut kiinnittää niin paljon huomiota kuin aloittavan koodaja yleensä tarvitsee. Tämä myös auttoi MVC-arkkitehtuurin toteuttamisessa käytännössä.<br>
+<br>
+Projektin jälkeen ryhmämme jäsenet ovat yhden kokemuksen rikkaampia. Canvasin käyttö tulevaisuuden Internet-pohjaisissa sovelluksissa tulee siis olemaan meiltä helpompaa. Lisäksi olemme tutustuneet jo mahdollisiin rajoituksiin ja ongelmatilanteisiin sen käyttöön liittyen, mikä helpottaa ryhmämme jäseniä päättämään, soveltuuko kyseinen tekniikka johonkin havaittuun tarpeeseen, jonka puitteissa tulemme myöhemmin työskentelemään. Lisäksi projektin innoittamana tutustuimme myös muihin HTML5:n tulossa oleviin ominaisuuksiin ja luultavasti tulemme tutustumaan niihin tarkemmin myös projektin jälkeen.<br>
+<h2>
+  <font size=4>Lähteet</font>
+</h2>
+[1] Google Code projekti - html5-canvas-whiteboard. Saatavilla:&nbsp;<a href=http://code.google.com/p/html-5-canvas-whiteboard/>http://code.google.com/p/html-5-canvas-whiteboard/</a>. [Viitattu 8.4.2010]
+<div>
+  <a href=http://code.google.com/p/html-5-canvas-whiteboard/></a>[2] HTML5 (including next generation additions still in development). Saatavilla:&nbsp;<a href=http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html>http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html</a>. [Viitattu 9.4.2010]<b><font size=3><br>
+  </font></b>
+</div>
+<br></body>
+</html>
